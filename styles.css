@@ -8,12 +8,12 @@
 }
 
 :root {
-    --primary-color: #D4A5A5;
-    --secondary-color: #E8C9D1;
-    --dark-color: #2C2C2C;
-    --light-color: #F5F3F1;
-    --accent-color: #C99BA7;
-    --text-color: #3a3a3a;
+    --primary-color: #E85B9C;
+    --secondary-color: #F0B5D8;
+    --dark-color: #4A1C5A;
+    --light-color: #FFF5FA;
+    --accent-color: #D946A6;
+    --text-color: #3d2e3d;
     --border-radius: 12px;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.15);
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--text-color);
     background-color: #fff;
     overflow-x: hidden;
@@ -75,7 +75,7 @@ body {
 }
 
 .loader-content p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: var(--primary-color);
@@ -108,7 +108,7 @@ body {
 }
 
 .nav-logo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-color);
@@ -294,7 +294,7 @@ body {
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 60px;
     font-weight: 700;
     color: var(--dark-color);
@@ -323,7 +323,7 @@ body {
     transition: var(--transition);
     text-decoration: none;
     display: inline-block;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn-primary {
@@ -372,7 +372,7 @@ body {
 }
 
 .section-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 48px;
     font-weight: 700;
     color: var(--dark-color);
@@ -405,7 +405,7 @@ body {
     font-weight: 500;
     color: var(--text-color);
     transition: var(--transition);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .filter-btn:hover,
@@ -422,7 +422,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 40px;
-    animation: fadeIn 0.6s ease;
+    animation: fadeIn 1s ease-out;
 }
 
 @keyframes fadeIn {
@@ -440,7 +440,10 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
     cursor: pointer;
-    animation: slideInUp 0.6s ease;
+    animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -459,6 +462,7 @@ body {
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-image i {
@@ -474,6 +478,10 @@ body {
 
 .product-info {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
 }
 
 .product-category {
@@ -486,11 +494,18 @@ body {
 }
 
 .product-name {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: var(--dark-color);
     margin-bottom: 10px;
+    line-height: 1.3;
+    text-align: left;
+    min-height: 52px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .product-description {
@@ -505,13 +520,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 15px;
 }
 
 .product-price {
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-color);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .add-to-cart-btn {
@@ -573,7 +591,7 @@ body {
 }
 
 .modal-header h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     color: var(--dark-color);
 }
@@ -661,7 +679,7 @@ body {
 }
 
 .footer-section h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     color: var(--primary-color);
     margin-bottom: 15px;
@@ -759,7 +777,7 @@ body {
    BANNER PROMOCIONAL
    ============================ */
 .banner-promo {
-    background: linear-gradient(135deg, var(--light-color) 0%, #fff 100%);
+    background: linear-gradient(135deg, #FFF5FA 0%, #FFE8F5 100%);
     padding: 60px 0;
     margin: -50px 0 50px 0;
 }
@@ -805,7 +823,7 @@ body {
 }
 
 .categorias-destacadas h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 36px;
     text-align: center;
     margin-bottom: 50px;
@@ -851,7 +869,7 @@ body {
 }
 
 .categoria-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: var(--dark-color);
@@ -868,11 +886,11 @@ body {
    ============================ */
 .ofertas-especiales {
     padding: 80px 0;
-    background: linear-gradient(135deg, #F5F3F1 0%, #fff 100%);
+    background: linear-gradient(135deg, #FFF5FA 0%, #FFE8F5 100%);
 }
 
 .ofertas-especiales h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 36px;
     text-align: center;
     color: var(--dark-color);
@@ -933,7 +951,7 @@ body {
 }
 
 .oferta-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: var(--dark-color);
@@ -976,7 +994,7 @@ body {
 }
 
 .testimonios h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 36px;
     text-align: center;
     color: var(--dark-color);
@@ -1042,7 +1060,7 @@ body {
    ============================ */
 .por-que-elegirnos {
     padding: 100px 0;
-    background: linear-gradient(135deg, #F5F3F1 0%, #fff 100%);
+    background: linear-gradient(135deg, #FFF5FA 0%, #FFE8F5 100%);
 }
 
 .section-header-alt {
@@ -1051,7 +1069,7 @@ body {
 }
 
 .section-header-alt h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 42px;
     color: var(--dark-color);
     margin-bottom: 12px;
@@ -1108,7 +1126,7 @@ body {
 }
 
 .ventaja-item h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 22px;
     font-weight: 600;
     color: var(--dark-color);
@@ -1130,6 +1148,10 @@ body {
 /* TABLET - 768px y menores */
 @media (max-width: 768px) {
     /* NAVBAR */
+    .nav-logo {
+        margin-left: 0;
+    }
+
     .nav-menu {
         position: absolute;
         top: 70px;
@@ -1302,6 +1324,7 @@ body {
     /* NAVBAR */
     .nav-logo {
         font-size: 18px;
+        margin-left: 0;
     }
 
     .nav-logo i {
@@ -1428,11 +1451,20 @@ body {
 
     .product-info {
         padding: 12px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
     }
 
     .product-name {
         font-size: 14px;
         margin-bottom: 8px;
+        min-height: 36px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     .product-price {
@@ -1442,6 +1474,7 @@ body {
     .add-to-cart-btn {
         padding: 8px 10px;
         font-size: 12px;
+        flex: 1;
     }
 
     /* OFERTAS */

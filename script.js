@@ -43,8 +43,7 @@ function mostrarProductos(productosAMostrar) {
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
-            <div class="product-image" style="background: ${producto.imagen};">
-                <i class="${producto.icono}"></i>
+            <div class="product-image" style="background-image: url('${producto.imagen}');">
             </div>
             <div class="product-info">
                 <p class="product-category">${producto.categoria}</p>
