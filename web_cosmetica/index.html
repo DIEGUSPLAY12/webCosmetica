@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Cosmética Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>LUXE</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-spa"></i>
+                <span>LUXE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#productos" class="nav-link">Productos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Belleza Premium en Cada Detalle</h1>
+            <p class="hero-subtitle">Descubre nuestra colección exclusiva de cosmética de lujo</p>
+            <a href="#productos" class="btn btn-primary">Explorar Colección</a>
+        </div>
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Promocional -->
+    <section class="banner-promo">
+        <div class="promo-content">
+            <div class="promo-item">
+                <i class="fas fa-truck"></i>
+                <h3>Envío Gratis</h3>
+                <p>En compras mayores a $50</p>
+            </div>
+            <div class="promo-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>100% Original</h3>
+                <p>Productos certificados y auténticos</p>
+            </div>
+            <div class="promo-item">
+                <i class="fas fa-undo"></i>
+                <h3>Devoluciones</h3>
+                <p>30 días sin preguntas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías destacadas -->
+    <section class="categorias-destacadas">
+        <div class="container">
+            <h2>Explora nuestras categorías</h2>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <div class="categoria-imagen" style="background: linear-gradient(135deg, #FFE5E5 0%, #FFB3C1 100%);">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Labiales</h3>
+                    <p>6 productos</p>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-imagen" style="background: linear-gradient(135deg, #E8D5E5 0%, #D4B5D1 100%);">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Cremas</h3>
+                    <p>5 productos</p>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-imagen" style="background: linear-gradient(135deg, #F5E5D5 0%, #E8C9B5 100%);">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Perfumes</h3>
+                    <p>3 productos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Colección</h2>
+                <p>Selección premium de productos de belleza</p>
+            </div>
+
+            <div class="filtros">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="labiales">Labiales</button>
+                <button class="filter-btn" data-filter="cremas">Cremas</button>
+                <button class="filter-btn" data-filter="perfumes">Perfumes</button>
+            </div>
+
+            <div id="productos-grid" class="productos-grid">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ofertas Especiales -->
+    <section class="ofertas-especiales">
+        <div class="container">
+            <h2>Productos en Oferta</h2>
+            <p class="subtitle-oferta">Descuentos exclusivos esta semana</p>
+            <div class="ofertas-grid">
+                <div class="oferta-card">
+                    <div class="oferta-badge">-20%</div>
+                    <div class="oferta-imagen" style="background: linear-gradient(135deg, #FFD5E8 0%, #FFA8D8 100%);"></div>
+                    <h3>Labial Premium 3 Pack</h3>
+                    <div class="precio-oferta">
+                        <span class="precio-anterior">$129.99</span>
+                        <span class="precio-nuevo">$103.99</span>
+                    </div>
+                    <button class="btn btn-primary btn-small">Ver Oferta</button>
+                </div>
+                <div class="oferta-card">
+                    <div class="oferta-badge">-15%</div>
+                    <div class="oferta-imagen" style="background: linear-gradient(135deg, #E8D5F0 0%, #D4B5E8 100%);"></div>
+                    <h3>Kit Cremas Hidratantes</h3>
+                    <div class="precio-oferta">
+                        <span class="precio-anterior">$189.99</span>
+                        <span class="precio-nuevo">$161.49</span>
+                    </div>
+                    <button class="btn btn-primary btn-small">Ver Oferta</button>
+                </div>
+                <div class="oferta-card">
+                    <div class="oferta-badge">-25%</div>
+                    <div class="oferta-imagen" style="background: linear-gradient(135deg, #F5D5C5 0%, #E8B599 100%);"></div>
+                    <h3>Set Perfumes Exclusivo</h3>
+                    <div class="precio-oferta">
+                        <span class="precio-anterior">$249.99</span>
+                        <span class="precio-nuevo">$187.49</span>
+                    </div>
+                    <button class="btn btn-primary btn-small">Ver Oferta</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <h2>Lo que dicen nuestras clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Productos de excelente calidad. He probado varias marcas de cosmética premium y LUXE definitivamente se destaca. Recomendado 100%."</p>
+                    <div class="testimonio-autor">
+                        <strong>María González</strong>
+                        <small>Cliente verificada</small>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Impresionada con el envío rápido y cuidadoso. Los productos llegaron en perfecto estado y el empaque es muy elegante."</p>
+                    <div class="testimonio-autor">
+                        <strong>Elena Rodríguez</strong>
+                        <small>Cliente verificada</small>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Ya es la tercera vez que compro. El labial Velvet Luxury es mi favorito, dura todo el día y se ve impecable."</p>
+                    <div class="testimonio-autor">
+                        <strong>Sofia Martinez</strong>
+                        <small>Cliente verificada</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section class="por-que-elegirnos">
+        <div class="container">
+            <div class="section-header-alt">
+                <h2>Por Qué Elegirnos</h2>
+                <p>Nuestra diferencia está en cada detalle</p>
+            </div>
+            <div class="ventajas-grid">
+                <div class="ventaja-item">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                    <p>Cada producto es seleccionado cuidadosamente en base a estándares internacionales de excelencia. Trabajamos solo con las mejores marcas y proveedores verificados.</p>
+                </div>
+                <div class="ventaja-item">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Compromiso Natural</h3>
+                    <p>Priorizamos ingredientes naturales y fórmulas limpias. Todos nuestros productos son compilados con estándares éticos y respetuosos con el medio ambiente.</p>
+                </div>
+                <div class="ventaja-item">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Envío Rápido</h3>
+                    <p>Entrega en 2-5 días laborales con embalaje premium. Nos aseguramos de que tus productos lleguen en perfecto estado, protegidos y listos para usar.</p>
+                </div>
+                <div class="ventaja-item">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Nuestro equipo de expertos está disponible para asesorarte. Ofrecemos recomendaciones personalizadas según tu tipo de piel y necesidades específicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Mi Carrito</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <!-- Artículos del carrito aquí -->
+            </div>
+            <div class="cart-total">
+                <strong>Total: $<span id="total-price">0.00</span></strong>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 20px;">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LUXE</h4>
+                    <p>Cosmética premium para mujeres modernas que aman la calidad y el estilo.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@luxe.com</p>
+                    <p>Teléfono: +34 912 345 678</p>
+                    <p>Madrid, España</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LUXE. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

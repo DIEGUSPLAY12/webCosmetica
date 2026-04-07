@@ -1,0 +1,85 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Labial Velvet Luxury",
+      "categoria": "labiales",
+      "precio": 45.99,
+      "descripcion": "Labial mate de larga duración con fórmula sedosa",
+      "imagen": "linear-gradient(135deg, #FFB6D9 0%, #FF8FB7 100%)",
+      "icono": "fas fa-heart"
+    },
+    {
+      "id": 2,
+      "nombre": "Crema Hidratante Premium",
+      "categoria": "cremas",
+      "precio": 62.50,
+      "descripcion": "Crema facial de noche ultra nutritiva con ácido hialurónico",
+      "imagen": "linear-gradient(135deg, #E8D5E5 0%, #D4B5D1 100%)",
+      "icono": "fas fa-spa"
+    },
+    {
+      "id": 3,
+      "nombre": "Perfume Essence Rose",
+      "categoria": "perfumes",
+      "precio": 89.99,
+      "descripcion": "Eau de Parfum con notas florales y almízcares",
+      "imagen": "linear-gradient(135deg, #F5D5C5 0%, #E8B599 100%)",
+      "icono": "fas fa-flask"
+    },
+    {
+      "id": 4,
+      "nombre": "Labial Nude Elegance",
+      "categoria": "labiales",
+      "precio": 38.00,
+      "descripcion": "Tono nude universal para día y noche",
+      "imagen": "linear-gradient(135deg, #FFD5C5 0%, #FFAA99 100%)",
+      "icono": "fas fa-lipstick"
+    },
+    {
+      "id": 5,
+      "nombre": "Serum Antienvejecimiento",
+      "categoria": "cremas",
+      "precio": 75.99,
+      "descripcion": "Sérum concentrado con retinol y vitamina C",
+      "imagen": "linear-gradient(135deg, #FFE5D5 0%, #FFD4B7 100%)",
+      "icono": "fas fa-droplet"
+    },
+    {
+      "id": 6,
+      "nombre": "Perfume Midnight Glamour",
+      "categoria": "perfumes",
+      "precio": 95.50,
+      "descripcion": "Fragancia amaderada y oriental para noches especiales",
+      "imagen": "linear-gradient(135deg, #E5D5FF 0%, #D4B5F0 100%)",
+      "icono": "fas fa-sparkles"
+    },
+    {
+      "id": 7,
+      "nombre": "Labial Rojo Pasión",
+      "categoria": "labiales",
+      "precio": 42.00,
+      "descripcion": "Rojo intenso con acabado satinado",
+      "imagen": "linear-gradient(135deg, #FF9999 0%, #FF6B6B 100%)",
+      "icono": "fas fa-heart"
+    },
+    {
+      "id": 8,
+      "nombre": "Crema Contorno de Ojos",
+      "categoria": "cremas",
+      "precio": 58.99,
+      "descripcion": "Tratamiento específico para la zona delicada del contorno",
+      "imagen": "linear-gradient(135deg, #D5E5FF 0%, #B5D1F0 100%)",
+      "icono": "fas fa-eye"
+    },
+    {
+      "id": 9,
+      "nombre": "Perfume Floral Fantasy",
+      "categoria": "perfumes",
+      "precio": 82.00,
+      "descripcion": "Eau de Toilette con notas frescas y florales",
+      "imagen": "linear-gradient(135deg, #FFD5E5 0%, #FFB7D1 100%)",
+      "icono": "fas fa-flower"
+    }
+  ]
+}
