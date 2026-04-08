@@ -1086,56 +1086,77 @@ body {
 .ventajas-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.ventaja-item {
-    text-align: center;
-    padding: 0;
+.ventaja-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
-.ventaja-item:hover {
-    transform: translateY(-5px);
+.ventaja-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 165, 165, 0.25);
+}
+
+.ventaja-card-top {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 40px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ventaja-icon {
-    width: 90px;
-    height: 90px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 30px;
-    box-shadow: 0 10px 30px rgba(212, 165, 165, 0.2);
+    box-shadow: 0 8px 20px rgba(212, 165, 165, 0.2);
     transition: var(--transition);
 }
 
-.ventaja-item:hover .ventaja-icon {
-    box-shadow: 0 15px 40px rgba(212, 165, 165, 0.35);
-    transform: scale(1.1);
+.ventaja-card:hover .ventaja-icon {
+    box-shadow: 0 12px 30px rgba(212, 165, 165, 0.35);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .ventaja-icon i {
-    font-size: 38px;
+    font-size: 36px;
     color: white;
 }
 
-.ventaja-item h3 {
+.ventaja-card-content {
+    padding: 25px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ventaja-card h3 {
     font-family: 'Inter', sans-serif;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 600;
     color: var(--dark-color);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     letter-spacing: -0.3px;
 }
 
-.ventaja-item p {
-    font-size: 15px;
+.ventaja-card p {
+    font-size: 14px;
     color: #777;
     line-height: 1.8;
     font-weight: 300;
